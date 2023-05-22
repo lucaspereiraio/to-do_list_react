@@ -10,7 +10,7 @@ export const ListItem = ({ item }: Props) => {
   const [isChecked, setIsChecked] = useState(item.done);
 
   return (
-    <C.Container>
+    <C.Container done={isChecked}>
       <input
         type="checkbox"
         checked={isChecked}
